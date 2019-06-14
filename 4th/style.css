@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif;
+  
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  flex-basis: 60vw;
+}
+.acme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+}
+header img{
+  width: 35vw;
+  height: 100vh;
+}
+.land{
+  width: 20vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5vw;
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.land p{
+  padding: 10px 0;
+}
+.land a{
+  text-decoration: none;
+  color: black;
+  padding: 8px 20px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.land a:hover{
+  background: lightcyan;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  flex-basis: 60vw;
+}
+.work{
+  display: flex;
+  justify-content: center;
+  width: 60vw;
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: 22px;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.884);
+}
+.work h3{
+  border-left: 2px solid aliceblue;
+  border-right: 2px solid aliceblue;
+  padding: 5px 20px;
+}
+
+.ct{  
+  width: 60vw;
+  text-align: center;
+  font-size: 22px;
+  background-color: antiquewhite;
+}
+.ct img{
+  width: 60vw;
+} 
+.ct h2{
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+.ct p{
+  padding-bottom: 20px;
+}
+
+
+footer{
+  padding: 20px 0;
+  text-align: center;
+}
+footer h1{
+  padding: 15px 0;
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+footer p{
+  padding: 5px 0;
+  font-size: 22px;
+}
+
+
+@media(max-width: 1025px){
+
+  header{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100vw;
+  }
+  .acme{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  header img{
+    width: 100vw;
+    height: 60vh;
+  }
+  .land{
+    width: 80vw;
+    padding: 30px 10px;
+    font-size: 22px;
+  }
+  .land p{
+    padding: 8px 0;
+  }
+  .land a{
+    padding: 3px 15px;
+    margin: 7px 0;
+    font-size: 20px;
+    border-radius: 15px;
+  }
+
+
+
+  .work{
+    width: 100vw;
+  }
+  .work h3{
+    padding: 7px 15px;
+  }
+  .ct{  
+    width: 100vw;
+    text-align: center;
+    font-size: 20px;
+    background-color: antiquewhite;
+  }
+  .ct img{
+    width: 100vw;
+  } 
+  .ct h2{
+    padding: 15px 0;
+  }
+  .ct p{
+    padding-bottom: 20px;
+  }
+
+  footer{
+    padding: 15px 0;
+    text-align: center;
+  }
+  footer h1{
+    padding: 10px 0;
+    font-size: 2rem;
+  }
+  footer p{
+    padding: 5px 0;
+    font-size: 18px;
+  }
+
+}

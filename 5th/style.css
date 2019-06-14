@@ -1,0 +1,191 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.main{
+  background: url('media/4k-wallpaper-background-beautiful-853199.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  text-align: center;
+}
+.main h1{
+  font-size: 60px;
+}
+.main a{
+  text-decoration: none;
+  color: aliceblue;
+  background: lightcoral;
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.main a:hover{
+  color: lightcoral;
+  background: aliceblue;
+  border: 1px solid lightcoral;
+}
+.main p{
+  padding: 15px 10px;
+}
+
+/*........................Menu Toggle....................*/
+
+
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#toggler{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.hmb{
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 1;
+  height: 60px;
+  width: 40px;
+  background: rgba(10, 10, 10, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*..........Toggle line............*/
+
+
+.hmb > div{
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/*...............Top and Bottom lines........*/
+
+.hmb > div:before,
+.hmb > div:after{
+  content: ' ';
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  width: 100%;
+  height: 2px;
+  background-color: antiquewhite;
+}
+
+/*.....................Move line to bottom.............*/
+
+.hmb > div:after{
+  top: 10px;
+}
+
+/*..............Rotation.................*/
+
+
+#toggler:checked + .hmb > div{
+  transform: rotate(135deg);
+}
+
+
+/*...................Making of X................*/
+
+#toggler:checked + .hmb > div:before,
+#toggler:checked + .hmb > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#toggler:checked:hover + .hmb > div {
+  transform: rotate(225deg);
+}
+
+/*.................Show Menu..................*/
+
+#toggler:checked ~ .list{
+  visibility: visible;
+}
+
+#toggler:checked ~ .list >div{
+  transform: scale(1);
+  transition-duration: 0.50s;
+}
+
+#toggler:checked ~ .list > div > div{
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+/*...................Menu at the center................*/
+
+.menu .list{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .list > div{
+  background: rgba(14, 1, 1, 0.849);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu .list > div > div{
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/*.................Menu Style.............*/
+
+ul li{
+  list-style: none;
+  color: aliceblue;
+  padding: 1rem;
+  font-size: 2rem;
+}
+ul li a{
+  text-decoration: none;
+  color: aliceblue;
+  transition: color 0.4s ease;
+}
+ul li a:hover{
+  color: red;
+}

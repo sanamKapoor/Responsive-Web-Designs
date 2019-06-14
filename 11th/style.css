@@ -1,0 +1,110 @@
+:root{
+  --red-bg: rgb(214, 57, 57);
+  --white-bg: #fff;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+  width: 100vw;
+ height: 100vh;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+}
+.form-left, .form-right{
+  background-color: var(--red-bg);
+  padding: 10% 0%;
+  line-height: 1.2;
+  color: var(--white-bg);
+  font-size: 1.2rem;
+  width: 25vw;
+}
+p{
+  padding: 2% 7%;
+}
+a{
+  margin-top: 5%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.form-left{
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.form-right{
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+.sign-in-left{
+  padding: 7.1% 0%;
+  line-height: 1.2;
+  background-color: var(--white-bg);
+  font-size: 1.2rem;
+  width: 25vw;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.sign-in-left h1{
+  font-size: 2.5rem;
+}
+.sign-in-left a{
+  margin-top: 5%;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  background: var(--red-bg);
+  text-transform: uppercase;
+  border: 2px solid var(--white-bg);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+input{
+  margin: 10px 0;
+  width: 70%;
+  padding: 5px;
+  font-size: 1.3rem;
+  background-color: whitesmoke;
+  outline: none;
+}
+
+.sign-up-right{
+  padding: 7.6% 0%;
+  line-height: 1.2;
+  background-color: var(--white-bg);
+  font-size: 1.2rem;
+  width: 25vw;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.sign-up-right h1{
+  font-size: 2.5rem;
+}
+#sign-up-btn{
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  background: var(--red-bg);
+  text-transform: uppercase;
+  border: 2px solid var(--white-bg);
+  padding: 10px 30px;
+  border-radius: 30px;
+}

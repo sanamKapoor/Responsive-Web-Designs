@@ -1,0 +1,118 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+header::after{
+  content: ' ';
+  height: 90vh;
+  background: url('media/4k-wallpaper-background-beautiful-853199.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  filter: blur(10px);
+  transition: all 1000ms;
+ 
+}
+header:hover::after{
+  filter: blur(0px);
+}
+header:hover .main{
+  filter: blur(3px);
+}
+.main{
+  position: absolute;
+  top: 28vh;
+  left: 30vw;
+  z-index: 2;
+  color: aliceblue;
+  text-align: center;
+  font-size: 25px;
+}
+.one{
+  background-color: rgba(0, 0, 0, 0.932);
+  color: aliceblue;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.one h2{
+  padding: 10px 0;
+}
+ 
+.two{
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5%;
+}
+.about{
+  text-align: left;
+  font-size: 22px;
+}
+.about h1{
+  padding: 10px 0;
+}
+footer{
+  background-color: rgba(0, 0, 0, 0.932);
+  color: aliceblue;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px;
+}
+
+@media(max-width: 1025px){
+  .main{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    z-index: 2;
+    color: aliceblue;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+@media(max-width: 750px){
+  header::after{
+    content: ' ';
+    height: 70vh;
+    background: url('media/4k-wallpaper-background-beautiful-853199.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    filter: blur(10px);
+    transition: all 1000ms;
+   
+  }
+  .main{
+    position: absolute;
+    top: 10vh;
+    left: 4vw;
+    font-size: 20px;
+  }
+  .one{
+    display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  }
+  i{
+    padding-top: 15px;
+  }
+  .two{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    padding: 5%;
+  }
+  .about{
+    text-align: center;
+    font-size: 20px;
+  }
+  .about h1{
+    padding: 15px 0;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Scroll</title>
+</head>
+<body>
+  <header>
+    <ul id="ln">
+      <li><a href="#home">home</a></li>
+      <li><a href="#service">service</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">about</a></li>
+    </ul>
+  </header>
+  <div class="content">
+  <div id="home">
+    <h1>welcome to my website</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repellat eum facere beatae alias ut!</p>
+  </div>
+  <div id="service">
+    <h1>service</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi nemo voluptas, quia doloribus corporis animi.</p>
+  </div>
+  <div id="contact">
+    <h1>contact</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi nemo voluptas, quia doloribus corporis animi.</p>
+  </div>
+  <div id="about">
+    <h1>about</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi nemo voluptas, quia doloribus corporis animi.</p>
+  </div>
+</div>
+
+<script>
+  $('#ln a').onclick(function(e){
+    if(this.hash !== ' '){
+      e.preventDefault();
+
+      let hash  = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset.top
+      },1200);
+    }
+
+  });
+</script>
+</body>
+</html>

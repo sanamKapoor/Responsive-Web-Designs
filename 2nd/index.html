@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>iTune</title>
+</head>
+<body>
+  <header>
+    <img src="media/images (2).png" alt="Apple" width="30" height="30">
+    <ul>
+    <li>Mac</li>
+    <li>iPad</li>
+    <li>iPhone</li>
+    <li>TV</li>
+    <li>About</li>
+  </ul>
+  <div class="mobile-menu">
+  <div class="svg-btn" >
+    <a href="#" id="sv-bt">
+      <svg  width="30" height="30">
+        <path d="M0,5 30,5" stroke="#000000" stroke-width="3"/>
+        <path d="M0,14 30,14" stroke="#000000" stroke-width="3"/>
+        <path d="M0,23 30,23" stroke="#000000" stroke-width="3"/>
+    </svg>
+  </a>
+  </div>
+
+  <div class="side-menu" id="s-m">
+    <a href="#" id="close-btn">&times;</a>
+    <a href="#">Mac</a>
+    <a href="#">iPad</a>
+    <a href="#">iPhone</a>
+    <a href="#">TV</a>
+    <a href="#">About</a>
+  </div>
+</div>
+  </header>
+  <div class="one" id="one">
+    <div class="main">
+    <h1>save plants save life</h1>
+    <h3>Apple is working to make the Environment Fresh in California</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui animi placeat nemo debitis adipisci molestias labore dolorem. Vero consequatur eum officia veniam iste molestias excepturi adipisci ad vitae. Voluptatem, reiciendis.</p>
+  </div>
+</div>
+<div class="two">
+  <img src="media/rt_htd1mf.png" alt=""> 
+  <div class="ins">
+  <h3>Apple is looking for Developers to make some cool featured Apps.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione doloremque magni officia temporibus minus animi voluptatem, unde libero natus at, quas laboriosam, perspiciatis nostrum explicabo commodi tempora illum ipsa fugiat eos accusamus. Optio reprehenderit saepe porro, eveniet reiciendis quas incidunt nesciunt molestias est similique eum doloribus mollitia voluptatem natus repudiandae ad? Exercitationem eos ipsam facere.</p>
+  <a href="">Learn more about Apple ></a>
+</div>
+</div>
+  <div class="four">
+    <img src="media/iTunes-Codes-Gift-Card-scam-1.png" alt="Apple Card">
+    <div class="card">
+    <h1>Gift card</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo omnis suscipit temporibus deleniti ipsam odit, at, esse incidunt quia enim voluptatum, possimus aliquid asperiores corrupti quae. Molestias accusamus laudantium possimus soluta earum repellendus. Distinctio accusamus harum ullam praesentium adipisci quis!</p>
+</div>
+</div>
+<div class="three">
+  <h1>50 million songs on all your devices.</h1>
+  <p>
+      Stream over 50 million songs, ad-free. Or download albums and tracks to listen to offline. All the music in your personal iTunes library — no matter where it came from — lives right alongside the Apple Music catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
+      <img src="media/iphone-ipad.png" alt="iPhone">
+</div>
+<footer>  
+  <h1>Follow us on social media</h1>  
+  <ul class="ft">
+    <li class="tab">
+      <div class="social youtube">
+      <a href="#"></a>
+    </div>
+    <div class="content">
+      <h2>Youtube</h2>
+      Follow us on youtube for more details.</div>
+    </li>
+    <li class="tab">
+        <div class="social facebook">
+        <a href="#"></a>
+      </div>
+      <div class="content">
+          <h2>Facebook</h2>
+        Follow us on facebook for more details.</div>
+      </li>
+      <li class="tab">
+          <div class="social instagram">
+          <a href="#"></a>
+        </div>
+        <div class="content">
+            <h2>Instagram</h2>
+          Follow us on instagram for more details.</div>
+        </li>
+        <li class="tab">
+            <div class="social twitter">
+            <a href="#"></a>
+          </div>
+          <div class="content">
+              <h2>Twitter</h2>
+            Follow us on twitter for more details.</div>
+        </li>
+        <li class="tab">
+            <div class="social linkdin">
+            <a href="#"></a>
+          </div>
+          <div class="content">
+              <h2>Linkdin</h2>
+            Follow us on linkdin for more details.</div>
+          </li>
+  </ul>
+</footer>
+
+<script>
+  var h = document.getElementById('sv-bt').addEventListener('click', openMenu);
+  var g = document.getElementById('s-m');
+  var d = document.getElementById('one');
+  var f = document.getElementById('close-btn').addEventListener('click', closeMenu);
+  function openMenu(){
+      d.style.cssText = " filter: blur(3px); ";
+      g.style.top = 0;
+
+    }
+  function closeMenu(){
+    g.style.cssText = " top: -60vh; ";
+    d.style.cssText = " filter: blur(0px); ";
+  }
+
+  
+</script>
+</body>
+</html>

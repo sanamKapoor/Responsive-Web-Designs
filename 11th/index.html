@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Sign In & Sign Up
+  </title>
+</head>
+<body>
+  <div class="main">
+  <div class="container">
+      <div class="form-left">
+        <h1>Welcome Back!</h1>
+        <p>To keep connected with us please login with your personal info</p>
+        <a href="#" class="btn-left">sign in</a>
+      </div>
+      <div class="sign-in-left">
+        <h1>Sign In</h1>
+        <input type="text" name="" id="user-1" placeholder="Email"><br>
+        <input type="password" name="" id="pass-1" placeholder="Password">
+        <h4>forgot password</h4>
+        <a href="#" id="sign-in-btn">sign in</a>
+      </div>
+      <div class="form-right">
+        <h1>Hello friends!</h1>
+        <p>Enter your personal details and start journey with us, welcome</p>
+        <a href="#" class="btn-right">sign up</a>
+      </div>
+      <div class="sign-up-right">
+          <h1>Create an Account!</h1>
+          <input type="text" name="" id="name" placeholder="Name"><br>
+          <input type="text" name="" id="user-1" placeholder="Email"><br>
+          <input type="password" name="" id="pass-1" placeholder="Password"><br/>
+          <a href="#" id="sign-up-btn">sign up</a>
+        </div>
+  </div>
+</div>
+<script>
+  $('.sign-in-left').hide();
+  $('.form-right').hide();
+
+  $('.btn-left').click(function(){
+    $('.sign-up-right').hide();
+    $('.form-right').show();
+    $('.form-left').hide();
+    $('.sign-in-left').show();
+
+  });
+
+  $('.btn-right').click(function(){
+    $('.sign-up-right').show();
+    $('.form-right').hide();
+    $('.form-left').show();
+    $('.sign-in-left').hide();
+
+  });
+</script>
+</body>
+</html>
