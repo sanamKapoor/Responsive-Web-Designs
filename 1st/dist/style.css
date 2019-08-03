@@ -40,7 +40,7 @@ a:focus{
 
 
 #one{
-  background-image: url('media/pexels-photo-56759.jpeg');
+  background-image: url('../media/pexels-photo-56759.jpeg');
   background-position: center left;
   background-size: fill;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@ a:focus{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url('media/pexels-photo-1092364.jpeg');
+  background-image: url('../media/pexels-photo-1092364.jpeg');
   padding: 80px 20px;
 }
 #three h3{
